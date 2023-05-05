@@ -1,0 +1,187 @@
+****** session 1*********
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* #abc{
+    gap:20px;
+display: flex;
+flex-wrap: wrap;
+}
+
+@media screen and (min-width:1020px) {
+    #abc{
+    display: flex;
+    }
+            } */
+
+            /* px units kab use krna h */
+            /* buttons 95% px hi use karenge */
+            /* img,  */
+            /* 1) layout wali images (big size images, %) */
+            /* 2) focus wali images ads, products, icons, px and % ka mix */
+
+            /* vw, vh */
+            /* viewport ki width, vw */
+            /* viewport ki height, vh */
+
+            /* % ka unit parent tag ko follow karega */
+            /*  % kab use krna  */
+            /* webstite kay internal structure keliye se krna */
+            
+            /* vw,vh ka unit hamesha browser window ko follow karega */
+            /* vw, vh kab use krna  */
+            /* website kay outer structure ko establish krne keliye */
+
+            /* media-query. conditional CSS based on two thigns. size, output */
+
+        #redBox{
+            display: none;
+        } 
+
+         @media screen and (min-width:800px) and (max-width:1020px) {
+                #redBox{
+                    display: block;
+                }
+                body{
+                    background-color: black;
+                }
+            } 
+
+        @media screen and (min-width:765px) {
+                #greenbox{
+                    display: block;
+                }
+            }
+
+
+            @media screen and (min-width:1020px) {
+                #redBox{
+                    display: block;
+                }
+            } 
+
+             #abc{
+                display: flex;
+            }
+            
+
+            .child{
+                width: 250px;
+                height: 250px;
+            }
+
+            .child:nth-child(1){
+                background-color: aqua;
+                }
+                
+                .child:nth-child(2){
+                background-color: yellowgreen;
+                }   
+
+                .child:nth-child(3){
+                background-color: red;
+                }   
+
+                .child:nth-child(4){
+                background-color: blue;
+                }   
+
+        </style>
+
+</head>
+<body>
+   
+
+
+    <div id="abc">
+
+        <div class="child"></div>
+        <div id="greenbox" class="child"></div>
+        <div id="redBox" class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+********* session 2
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='all.css' rel='stylesheet'>
+    <style>
+
+        ol{
+            display: flex;
+     list-style-type: none;
+      background-color: antiquewhite;
+        }
+
+        li{
+            flex-grow: 1;
+        }
+
+        #ham-menu{
+            display: none;
+        }
+
+
+@media print {
+
+    body{
+        background-color: blue;
+    }
+    
+}
+
+        @media screen and (max-width:450px) {
+            #ham-menu{
+                display: block;
+            }
+
+            .gg-software-upload{
+                float: right;
+            }
+
+            .menu{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ol>
+        <li class="menu">home</li>
+        <li class="menu">contact</li>
+        <li class="menu">login</li>
+        <li class="menu">dashboard</li>
+        <li class="menu">services</li>
+        <li class="menu">region</li>
+        <li class="menu">account</li>
+        <li class="menu">billing</li>
+        <li id="ham-menu">
+            <span class="gg-software-upload"></span>
+        </li>
+    </ol>
+
+</body>
+</html>
