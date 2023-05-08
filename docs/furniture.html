@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #banner{
+    position: absolute;
+    z-index: -1;
+    width: 1218px;
+    }
+    
+    #wall{
+        width:411px;
+    padding-left: 25%;
+    }
+    #box{
+        width: 200px;
+        height: 250px;
+        background-color:#144677;
+        display: flex;
+        display: inline-block;
+        position: relative;
+        margin-left: 32px;
+        top: 67px;
+        left: 205px;    
+        border-radius: 15px;
+        box-shadow: 1px 1px 7px;
+    }
+    #box img{
+        justify-content: center;
+        position: absolute;
+        width: 174px;
+        height: 213px;
+        left: 13px;
+        top: 12px;
+    }
+    #box:hover{
+        box-shadow:#011c36 2px 5px 10px;
+        background-color: #09355e;
+    }
+
+    h1{
+        color: aliceblue;
+        margin-left: 20px;
+        text-shadow: #011c36 5px 5px 3px;
+        margin-top: 95px;  
+    }
+    #btn{
+        background-color:#144677;
+        border-radius: 20px;
+        margin-left: 72px;
+        width: 137px;
+        height: 35px;
+        box-shadow: 0px 0px 3px 0px;
+        margin-top: 72px; 
+        margin-top: -4px;
+        }
+    #btn:hover{
+        background-color: #09355e;
+        
+    }
+    #main-menu{
+        display: flex;
+        justify-content: center;
+        column-gap: 121px;
+        position: absolute;
+        left: 20%;
+        z-index: 1;
+        color: white;
+        list-style-type: none;
+        text-shadow: -1px 1px 11px;
+        
+    }
+    li{
+        flex-grow: 1;
+        padding-right: 40px;
+        padding-left:  18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+    li:hover{
+        background-color: #09355e;
+        box-shadow: #011c36 2px 5px 10px;
+    }
+    .child-menu{
+        list-style-type: none;
+        display: none;
+        position: absolute;
+        margin-left: -50px;
+        padding-top: 15px;
+        padding-left: 17px;
+    }
+    .menu-container:hover .child-menu{
+        display: block;
+    }
+    .menu-container{
+        position: relative;
+        padding-right: 40px;
+    }
+    section{
+        width: 1000px;
+        height: 800px;
+      background-color: rgb(192, 13, 13);
+
+    }
+
+</style>
+<body>
+    <ol id="main-menu">
+        <li>Home</li>
+        <li class="menu-container">category
+            <ol class="child-menu">
+                <li>modren</li>
+                <li>chair</li>
+                <li>bed</li>
+                <li>singel sofa</li>
+            </ol>
+        </li>
+        <li>50%-sale</li>
+        <li>Singup</li>
+    </ol>
+    <img src="./Home-Interior-Painting-is-Not-As-Hectic-As-You-Think.png" id="banner" alt="">
+    <div>
+        <div id="box">
+            <img src="./pngegg.png" class="img" alt="">
+        </div>
+        <div id="box">
+            <img src="./pngegg (3).png" alt="">
+        </div>
+        <div id="box">
+            <img src="./pngegg (4).png" alt="">
+        </div>
+        <div id="box">
+            <img src="./pngegg (2).png" alt="">
+        </div>
+    </div>
+     <h1>Sale 50 % off</h1>
+     <button id="btn">Click Now</button>
+     <h1>nffhgkg</h1>
+</body>
+</html>
